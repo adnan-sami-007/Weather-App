@@ -49,4 +49,12 @@ body {
   color: #2b235a;
 }
 
+.weatherBgImg {
+  display: flex;
+  justify-content: center;
+}
+.weatherBgImg img {
+  height: 200px;
+}
+
 
