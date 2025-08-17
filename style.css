@@ -13,9 +13,12 @@ body {
 }
 .mainContainer {
   background-color: #8fe0ff;
-  height: 85vh;
+  height: 80vh;
   width: 29rem;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
 }
 
 
@@ -23,7 +26,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .searchBox input {
   height: 3rem;
@@ -52,9 +55,40 @@ body {
 .weatherBgImg {
   display: flex;
   justify-content: center;
-}
-.weatherBgImg img {
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/images/clouds.png);
+  background-size: cover;
   height: 200px;
+  width: 200px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.temp {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.city {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+.infoContainer {
+  height: 150px;
+  /* width: 100%; */
+  background-color: #fff;
+  margin: 0 2rem 0 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.sunInfoContainer {
+  height: 100px;
+  background-color: #fff;
+  margin: 0 2rem 0 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 
