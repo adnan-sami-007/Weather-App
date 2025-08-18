@@ -13,7 +13,7 @@ body {
 }
 .mainContainer {
   background-color: #8fe0ff;
-  height: 80vh;
+  height: 85vh;
   width: 29rem;
   border-radius: 2rem;
   display: flex;
@@ -76,7 +76,7 @@ body {
 
 
 .infoContainer {
-  height: 150px;
+  height: 11rem;
   /* width: 100%; */
   background-color: #fff;
   margin: 0 2rem 0 2rem;
@@ -88,10 +88,8 @@ body {
   flex-wrap: wrap;
 }
 .box {
-  height: 70px;
-  width: 120px;
-  /* background-color: blue; */
-  /* border: 1px solid black; */
+  height: 4.4rem;
+  width: 7.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,11 +105,13 @@ body {
 
 
 .sunInfoContainer {
-  height: 100px;
+  height: 7.5rem;
   background-color: #fff;
   margin: 0 2rem 0 2rem;
   border-radius: 1rem;
   margin-top: 1rem;
+  background-image: url(images/pic.jpg);
+  background-size: cover;
 }
 
 
