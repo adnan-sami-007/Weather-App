@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .searchBox input {
   height: 3rem;
@@ -82,7 +82,20 @@ body {
   margin: 0 2rem 0 2rem;
   border-radius: 1rem;
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
+.box {
+  height: 70px;
+  width: 120px;
+  background-color: blue;
+  border: 1px solid black;
+}
+
+
+
 .sunInfoContainer {
   height: 100px;
   background-color: #fff;
@@ -90,5 +103,6 @@ body {
   border-radius: 1rem;
   margin-top: 1rem;
 }
+
 
 
