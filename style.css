@@ -112,7 +112,19 @@ body {
   margin-top: 1rem;
   background-image: url(images/pic.jpg);
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-
+.sunInfo {
+  font-size: 2rem;
+}
+.sunriseText {
+  margin-left: 2rem;
+  margin-top: 1.3rem;
+}
+.sunsetText {
+  margin-right: 1.5rem;
+  margin-top: 1.3rem;
+}
 
