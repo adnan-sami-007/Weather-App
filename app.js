@@ -4,11 +4,12 @@ const btn = document.querySelector('#btn');
 btn.addEventListener("click", () => {
   let inpValue = input.value;
   getWeather(inpValue);
-  input.innerText = '';
 })
 
 async function getWeather(city) {
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=df8060fcc2d3b557ddd1c119f440a8a8&units=metric`;
+
+  document.querySelector("#inputBox").value = '';
 
   try {
     let response = await axios.get(url);
