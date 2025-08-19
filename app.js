@@ -1,10 +1,10 @@
-const input = document.querySelector('#inputBox');
+let input = document.querySelector('#inputBox');
 const btn = document.querySelector('#btn');
 
 btn.addEventListener("click", () => {
   let inpValue = input.value;
-
   getWeather(inpValue);
+  input.innerText = '';
 })
 
 async function getWeather(city) {
