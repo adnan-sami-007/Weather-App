@@ -15,20 +15,26 @@ async function getWeather(city) {
     let response = await axios.get(url);
     console.log(response.data);
 
-
-    let temp = response.data.main.temp;
+    let realTemp = document.querySelector('#realTemp');
+    // let temp = response.data.main.temp;
+    realTemp.innerText = response.data.main.temp;
     // console.log(temp);
 
 
+    let cityName = document.querySelector('#cityName');
+    cityName.innerText = response.data.name;
 
 
 
-
-    let feels_like = response.data.main.feels_like;
+    // let feels_like = response.data.main.feels_like;
+    let feels_like = document.querySelector('#feels_like');
+    feels_like.innerText = response.data.main.feels_like;
     // console.log(feels_like);
 
 
-    let grnd_level = response.data.main.grnd_level;
+    // let grnd_level = response.data.main.grnd_level;
+    let grnd_level = document.querySelector('#grnd_level');
+    grnd_level.innerText = response.data.main.grnd_level;
     // console.log(grnd_level);
 
 
