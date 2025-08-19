@@ -1,13 +1,23 @@
-let url = `https://api.openweathermap.org/data/2.5/weather?q=chengdu&appid=df8060fcc2d3b557ddd1c119f440a8a8&units=metric`;
+const input = document.querySelector('#inputBox');
+const btn = document.querySelector('#btn');
 
-async function getWeather() {
+
+btn.addEventListener("click", () => {
+  let inpValue = input.value;
+
+  getWeather(inpValue);
+})
+
+async function getWeather(city) {
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=df8060fcc2d3b557ddd1c119f440a8a8&units=metric`;
+
   try {
     let response = await axios.get(url);
     console.log(response.data);
 
 
     let temp = response.data.main.temp;
-    console.log(temp);
+    // console.log(temp);
 
 
 
@@ -15,25 +25,25 @@ async function getWeather() {
 
 
     let feels_like = response.data.main.feels_like;
-    console.log(feels_like);
+    // console.log(feels_like);
 
 
     let grnd_level = response.data.main.grnd_level;
-    console.log(grnd_level);
+    // console.log(grnd_level);
 
 
     let humidity = response.data.main.humidity
-    console.log(humidity);
+    // console.log(humidity);
 
     let pressure = response.data.main.pressure;
-    console.log(pressure);
+    // console.log(pressure);
 
 
     let visibility = response.data.visibility / 1000;
-    console.log(visibility);
+    // console.log(visibility);
 
     let wind_speed = response.data.wind.speed;
-    console.log(wind_speed);
+    // console.log(wind_speed);
 
 
 
@@ -51,8 +61,8 @@ async function getWeather() {
       })
     }
 
-    console.log('Sunrise:', formatTime(sunrise))
-    console.log('Sunset:', formatTime(sunset))
+    // console.log('Sunrise:', formatTime(sunrise))
+    // console.log('Sunset:', formatTime(sunset))
 
 
 
@@ -61,4 +71,3 @@ async function getWeather() {
     console.log("ERROR: ", err);
   }
 }
-getWeather();
