@@ -38,17 +38,26 @@ async function getWeather(city) {
     // console.log(grnd_level);
 
 
-    let humidity = response.data.main.humidity
+    // let humidity = response.data.main.humidity
+    let humidity = document.querySelector('#humidity');
+    humidity.innerText = response.data.main.humidity;
     // console.log(humidity);
 
-    let pressure = response.data.main.pressure;
+
+    // let pressure = response.data.main.pressure;
+    let pressure = document.querySelector('#pressure');
+    pressure.innerText = response.data.main.pressure;
     // console.log(pressure);
 
 
-    let visibility = response.data.visibility / 1000;
+    // let visibility = response.data.visibility / 1000;
+    let visibility = document.querySelector('#visibility');
+    visibility.innerText = response.data.visibility / 1000;
     // console.log(visibility);
 
-    let wind_speed = response.data.wind.speed;
+    // let wind_speed = response.data.wind.speed;
+    let wind_speed = document.querySelector('#wind_speed');
+    wind_speed.innerText = response.data.wind.speed;
     // console.log(wind_speed);
 
 
