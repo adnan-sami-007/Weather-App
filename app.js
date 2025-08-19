@@ -1,7 +1,6 @@
 const input = document.querySelector('#inputBox');
 const btn = document.querySelector('#btn');
 
-
 btn.addEventListener("click", () => {
   let inpValue = input.value;
 
